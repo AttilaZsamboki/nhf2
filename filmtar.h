@@ -24,7 +24,7 @@ public:
   Film **keresCimAlapjan(string resz, int &db) const;
   Film **keresEvIntervalumban(int kezdoEv, int vegEv, int &db) const;
   void megtekintettreAllit(int id);
-  void ertekelesBeallít(int id, int ertekeles);
+  void ertekelesBeallit(int id, int ertekeles);
   bool filmTorol(int id);
   int getDarab() const;
 };

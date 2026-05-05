@@ -78,7 +78,7 @@ class DokumentumFilm : public Film {
 
 public:
   DokumentumFilm(int id, string cim, int jatekIdo, int kiadasiEv,
-                 bool megtekintett, int ertekeles, int leiras)
+                 bool megtekintett, int ertekeles, string leiras)
       : Film(id, cim, jatekIdo, kiadasiEv, megtekintett, ertekeles),
         leiras(leiras) {}
   string getLeiras() { return leiras; }
@@ -92,5 +92,6 @@ public:
     szoveg += "| Megtekintett: " + string(megtekintett ? "igen" : "nem") + " ";
     szoveg += "| Értékelés: " + std::to_string(ertekeles) + "/10";
     szoveg += "| Leírás: " + leiras + " ";
+    return szoveg;
   }
 };

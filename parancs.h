@@ -21,17 +21,18 @@ enum ParancsTipus {
 class Parancs {
   ParancsTipus tipus;
   string *argumentumok;
+  int db;
 
 public:
-  Parancs(ParancsTipus t, string *args);
+  Parancs(ParancsTipus t, string *args, int db);
   ParancsTipus getTipus() const;
   string *getArgumentumok() const;
   string getArgumentum(int index) const;
+  ~Parancs();
 };
 
 struct ParancsElemzo {
   Parancs elemez(string sor) const;
-  bool ervenyesParancs(string token) const;
 };
 
 class ParancsFeldolgozo {

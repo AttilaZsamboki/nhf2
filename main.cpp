@@ -1,5 +1,3 @@
-#include "film.h"
-#include "filmtar.h"
 #include "parancs.h"
 #include <iostream>
 #include <string>
